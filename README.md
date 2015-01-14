@@ -5,7 +5,7 @@ A check for cookie respawning using Verizon's UIDH. Included in the repo is the 
 required to both run crawls and analyze the resulting databases. You can also find
 download links below for the databases I collected.
 
-For my thoughts, read my Freedom to Tinker [post](https://freedom-to-tinker.com/blog/englehardt/verizon-uidh/).
+For my thoughts, read my Freedom to Tinker [post](https://freedom-to-tinker.com/blog/englehardt/verizons-tracking-header-can-they-do-better/).
 
 Scripts
 =======
