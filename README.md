@@ -5,7 +5,7 @@ A check for cookie respawning using Verizon's UIDH. Included in the repo is the 
 required to both run crawls and analyze the resulting databases. You can also find
 download links below for the databases I collected.
 
-For my thoughts, read my Freedom to Tinker [post](https://freedom-to-tinker.com/blog/englehardt/verizons-tracking-header-can-they-do-better/).
+For my thoughts on the header, read my Freedom to Tinker [post](https://freedom-to-tinker.com/blog/englehardt/verizons-tracking-header-can-they-do-better/).
 
 Scripts
 =======
@@ -13,6 +13,8 @@ Scripts
 * OpenWPM-0.2.1/ - modified [OpenWPM v0.2.1](https://github.com/citp/OpenWPM/releases/tag/v0.2.1)
 * list_domains.py - lists the domains where turn.com's respawned IDs are found
 * respawning.py - checks for cookies that may be respawned from the XUID header
+
+The included OpenWPM code is largely similar to the public repository. I've simply added [line 72](https://github.com/englehardt/verizon-uidh/blob/master/OpenWPM-0.2.1/automation/Proxy/MITMProxy.py#L72) to `automation/Proxy/MITMProxy.py`, which inserts the UIDH header into all traffic. You can limit it to HTTP traffic by checking the http type of `msg.request` first.
 
 Data
 ====
